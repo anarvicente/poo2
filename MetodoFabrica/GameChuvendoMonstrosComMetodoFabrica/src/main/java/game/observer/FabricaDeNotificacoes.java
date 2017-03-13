@@ -23,11 +23,9 @@ public class FabricaDeNotificacoes {
         Image statusJogo = null;
         if(tipo.equalsIgnoreCase("gameover")){    
             statusJogo = new Image(filePath + "\\src\\main\\java\\gameover.png");
-        }else if(tipo.equalsIgnoreCase("ganhou")){
+        }else{
             statusJogo = new Image(filePath + "\\src\\main\\java\\ganhou.png");
         }
-        //gameover
-        //ganhou 
         return statusJogo;
     }
 
