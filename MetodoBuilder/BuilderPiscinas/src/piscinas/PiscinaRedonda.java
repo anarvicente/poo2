@@ -7,11 +7,11 @@ package piscinas;
 
 /**
  *
- * @author Psicologia Judo
+ * @author ana
  */
-public class PiscinaHexagonalBuilder extends PiscinaBuilder{
+public class PiscinaRedonda implements Piscina {
     
-    public PiscinaHexagonalBuilder(Piscina p){
-            p = new PiscinaHexagonal();
-   }
+    public PiscinaRedonda(){
+        System.out.println("Criando piscina redonda");
+    }
 }

@@ -19,4 +19,5 @@ public abstract class PiscinaBuilder {
     public void buildAntiVazamento(){
         System.out.println("Aplicando tratamento anti-vazamento");
     }
+    public void buildEscada(){}
 }

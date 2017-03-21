@@ -11,9 +11,9 @@ package piscinas;
  */
 public class Main {
     public static void main(String[] args){
-        PiscinaBuilder retangular;  /* Eh assim mesmo ? */
+        Piscina piscina;
         PiscinaDiretor diretor = new PiscinaDiretor();
-        retangular = diretor.buildPiscina("retangular");
-        System.out.println(retangular);
+        piscina = diretor.buildPiscina("retangular");
+        
     }
 }

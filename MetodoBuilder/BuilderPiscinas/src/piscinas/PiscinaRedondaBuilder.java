@@ -11,4 +11,7 @@ package piscinas;
  */
 public class PiscinaRedondaBuilder extends PiscinaBuilder{
     
+    public PiscinaRedondaBuilder(Piscina p){
+            p = new PiscinaRedonda();
+    }
 }

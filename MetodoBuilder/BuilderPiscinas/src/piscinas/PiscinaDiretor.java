@@ -10,26 +10,27 @@ package piscinas;
  * @author Ana
  */
 public class PiscinaDiretor {
-    PiscinaBuilder builder;
-    public PiscinaBuilder buildPiscina(String tipoPiscina){
+    private Piscina piscina;
+    public Piscina buildPiscina(String tipoPiscina){
         if(tipoPiscina.equalsIgnoreCase("retangular")){
-            builder = new PiscinaRetangularBuilder();
-            builder.buildCorpo();
-            builder.buildTinta();
-            builder.buildAntiVazamento();
-            builder.buildEscada(); /* Pq não funciona ? */
+            PiscinaRetangularBuilder retangular = new PiscinaRetangularBuilder(piscina);
+            retangular.buildCorpo();
+            retangular.buildTinta();
+            retangular.buildAntiVazamento();
+            retangular.buildEscada();
+            
         }else if (tipoPiscina.equalsIgnoreCase("rendonda")){
-            builder = new PiscinaRedondaBuilder();
-            builder.buildCorpo();
-            builder.buildTinta();
-            builder.buildAntiVazamento();
+            PiscinaRedondaBuilder redonda = new PiscinaRedondaBuilder(piscina);
+            redonda.buildCorpo();
+            redonda.buildTinta();
+            redonda.buildAntiVazamento();
             
         }else if(tipoPiscina.equalsIgnoreCase("hexagonal")){
-            builder = new PiscinaHexagonalBuilder();
-            builder.buildCorpo();
-            builder.buildTinta();
-            builder.buildAntiVazamento();
+            PiscinaHexagonalBuilder hexagonal = new PiscinaHexagonalBuilder(piscina);
+            hexagonal.buildCorpo();
+            hexagonal.buildTinta();
+            hexagonal.buildAntiVazamento();
         }
-        return builder;
+        return piscina;
     } 
 }

@@ -7,11 +7,8 @@ package piscinas;
 
 /**
  *
- * @author Psicologia Judo
+ * @author ana
  */
-public class PiscinaHexagonalBuilder extends PiscinaBuilder{
+public interface Piscina {
     
-    public PiscinaHexagonalBuilder(Piscina p){
-            p = new PiscinaHexagonal();
-   }
 }
