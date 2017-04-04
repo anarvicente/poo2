@@ -9,12 +9,40 @@ package clientes;
  *
  * @author 20142BSI0038
  */
-public class ClienteS2 extends ClienteS1{
+public class ClienteS2{
     private String nome;
     private String sobreNome;
     private String dddTelefone;
     private String dddCelular;
+    private String telefone;
+    private String email;
+    private String celular; 
 
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
+    
     public String getNome() {
         return nome;
     }
@@ -47,4 +75,10 @@ public class ClienteS2 extends ClienteS1{
     public void setDddCelular(String dddCelular) {
         this.dddCelular = dddCelular;
     }
+    
+    
+    
+    
+    
+    
 }

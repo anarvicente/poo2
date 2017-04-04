@@ -22,6 +22,6 @@ public class Main {
     c2.setNome("jose"); 
     c2.setSobreNome("Silva"); 
     adapter = new AdapterClienteS2(c2);
-    SalvaCliente.salva(c2);
+    SalvaCliente.salva(adapter);
 }
 }

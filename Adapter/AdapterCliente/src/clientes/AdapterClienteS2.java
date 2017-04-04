@@ -9,11 +9,28 @@ package clientes;
  *
  * @author 20142BSI0038
  */
-public class AdapterClienteS2 {    
+public class AdapterClienteS2 extends ClienteS1 {    
+    private ClienteS2 c2;
+    
     public AdapterClienteS2(ClienteS2 c2){
-        c2.setNomeCompleto(c2.getNome() + " " + c2.getSobreNome());
-        c2.setEmail(c2.getEmail());
-        c2.setTelefone(c2.getDddTelefone() + c2.getTelefone());
-        c2.setCelular(c2.getDddCelular() + c2.getCelular());
+       this.c2 = c2;
     }
+    
+    public String getNomeCompleto() {
+        return this.c2.getNome() + " " + this.c2.getSobreNome();
+    }
+    
+    public String getTelefone() {
+        return this.c2.getDddTelefone() + this.c2.getTelefone();
+    }
+    
+     public String getCelular() {
+        return this.c2.getDddCelular() + this.c2.getCelular();
+    }
+    
+    public String getEmail() {
+        return this.c2.getEmail();
+    } 
+    
+    
 }
