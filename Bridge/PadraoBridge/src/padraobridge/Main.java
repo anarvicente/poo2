@@ -11,20 +11,24 @@ package padraobridge;
  */
 public class Main {
 public static void main(String[] args) {
+    Object o = new Object();
+    
+    PersistenciaDeDados implementor = null;
+    
+    if(databaseDriverExists()){
+        implementor = new DataBase();
+    }
+    else{
+        implementor = new FileSystem();
+    }
+    
+    Persistencia persistenceAPI = new ImplementacaoPersistencia(implementor);
+    
+    persistenceAPI.salvar(o);
+    
+    }
 
-PersistenciaDeDados implementor = null;
-
-if(databaseDriverExists()){
-implementor = new DataBase();
-}
-else{
-implementor = new FileSystem(); 
-}
-Persistencia persistenceAPI = new ImplementacaoPersistencia(implementor);
-persistenceAPI.save(o);  /*De onde veio esse o ? rs */
-}
-
-private static boolean databaseDriverExists() {
-return false;
-}
+    private static boolean databaseDriverExists() {
+        return false;
+    }
 }

@@ -11,13 +11,12 @@ package padraobridge;
  */
 public class ImplementacaoPersistencia extends Persistencia {
     
-    private PersistenciaDeDados implementor;
     
     ImplementacaoPersistencia(PersistenciaDeDados implementor) {
-        this.implementor = implementor;
+        super.setObjetoPd(implementor);
     }
     
     public void salvar(Object object) {
-        System.out.println("Objeto salvo usando FileSystem!");
+        super.salvar(object);
     }
 }

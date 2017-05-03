@@ -11,6 +11,17 @@ package padraobridge;
  */
 public abstract class Persistencia {
  
-    PersistenciaDeDados pd;
-    
+    PersistenciaDeDados objetopd;
+
+    public PersistenciaDeDados getObjetoPd() {
+        return objetopd;
+    }
+
+    public void setObjetoPd(PersistenciaDeDados persistir) {
+        this.objetopd = persistir;
+    }
+
+    void salvar(Object o) {
+        objetopd.salvar(o);
+    }
 }
