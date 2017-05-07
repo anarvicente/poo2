@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {                                    
                         
             
-         /*  VeiculoDAO veiculoDAO = new VeiculoDAOImpl();            ;;;
+           VeiculoDAO veiculoDAO = new VeiculoDAOImpl();            ;;;
            Veiculo veiculo = new Veiculo();
            veiculo.setAno("2010");
            veiculo.setMarca("Fiat");
@@ -30,7 +30,7 @@ public class Main {
            listar = veiculoDAO.listar(Veiculo.class);
            for(Veiculo printVeiculo : listar){
                System.out.println(printVeiculo.toString());
-           } */
+           } 
            
            /* */
            
