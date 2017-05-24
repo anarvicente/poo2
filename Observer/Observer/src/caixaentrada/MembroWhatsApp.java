@@ -17,6 +17,7 @@ public class MembroWhatsApp implements Observer{
     @Override
     public void update(Observable obs) {
        System.out.println("Notificando Membro WhatsApp");
+       System.out.println("Mensagem: "+((CaixaEntradaGrupo) obs).getMensagem());
     }
     
 }

@@ -17,6 +17,7 @@ public class Blog implements Observer {
     @Override
     public void update(Observable obs) {
         System.out.println("Notificando Blog");
+        System.out.println("Mensagem: "+((CaixaPublicacao) obs).getMensagem());
     }
     
 }

@@ -16,6 +16,7 @@ public class MembroEmail implements Observer {
     @Override
     public void update(Observable obs) {
         System.out.println("Notificando Membro Email");
+        System.out.println("Mensagem: "+((CaixaEntradaGrupo) obs).getMensagem());
     }
     
 }
