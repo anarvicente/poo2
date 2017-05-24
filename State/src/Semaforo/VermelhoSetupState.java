@@ -27,7 +27,7 @@ public class VermelhoSetupState implements SemaforoSetupState {
     public void proximo() {
         try {
             vermelho.exibeVermelho();
-            Thread.sleep(3000);
+            Thread.sleep(30000);
             sinal.setState(sinal.getVerde());
         } catch (InterruptedException ex) {
             Logger.getLogger(VermelhoSetupState.class.getName()).log(Level.SEVERE, null, ex);
