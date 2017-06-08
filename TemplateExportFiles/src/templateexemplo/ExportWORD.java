@@ -33,7 +33,7 @@ public class ExportWORD extends Export {
             document = new XWPFDocument();
             //Blank Document
         } catch (IOException ex) {
-            Logger.getLogger(ExportFiles.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ExportWORD.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

@@ -33,7 +33,7 @@ public class ExportHTML extends Export{
             out = new BufferedWriter(fw);
             out.write("<HTML><BODY>");
         } catch (IOException ex) {
-            Logger.getLogger(ExportFiles.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ExportHTML.class.getName()).log(Level.SEVERE, null, ex);
         }
     
     }

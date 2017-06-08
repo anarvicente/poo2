@@ -22,14 +22,14 @@ public abstract class Export {
             try{                            // Isso prejudica o desempenho ? o try catch dentro do loop ?
                 printLine((String)linhas);
             } catch (IOException ex) {
-            Logger.getLogger(ExportFiles.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Export.class.getName()).log(Level.SEVERE, null, ex);
         }
         }   
         
         try{
             save();
         } catch (IOException ex) {
-            Logger.getLogger(ExportFiles.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Export.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
