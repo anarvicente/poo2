@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Psicologia%20Judo/Documents/ANA-RUBIA/poo2/CommandPattern/src/commandTelevisao/CanalUpCommand.java</file>
+            <file>file:/C:/Users/Psicologia%20Judo/Documents/ANA-RUBIA/poo2/CommandPattern/src/commandTelevisao/Command.java</file>
+            <file>file:/C:/Users/Psicologia%20Judo/Documents/ANA-RUBIA/poo2/CommandPattern/src/commandTelevisao/Televisao.java</file>
+            <file>file:/C:/Users/Psicologia%20Judo/Documents/ANA-RUBIA/poo2/CommandPattern/src/commandTelevisao/ControleTV.java</file>
+            <file>file:/C:/Users/Psicologia%20Judo/Documents/ANA-RUBIA/poo2/CommandPattern/src/commandTelevisao/Main.java</file>
+        </group>
     </open-files>
 </project-private>
