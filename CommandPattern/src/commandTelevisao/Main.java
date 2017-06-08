@@ -37,7 +37,7 @@ public class Main {
         
         
         for(int i =0; i < controle.getListaDeComandos().size(); i++){
-            System.out.println(controle.getListaDeComandos().get(i)); //como imprimir a string e nao o objetob ??
+            System.out.println(controle.getListaDeComandos().get(i).toString()); 
         }
         
     }

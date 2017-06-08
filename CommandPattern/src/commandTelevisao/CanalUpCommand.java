@@ -20,5 +20,8 @@ public class CanalUpCommand implements Command{
     public void execute() {
         this.tv.aumentarCanal();
     }
- 
+    
+    public String toString(){
+        return "Aumentar";
+    }
 }

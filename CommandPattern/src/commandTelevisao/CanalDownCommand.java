@@ -22,4 +22,8 @@ public class CanalDownCommand implements Command{
         this.tv.diminuirCanal();
     }
     
+    public String toString(){
+        return "Diminuir";
+    }
+    
 }
